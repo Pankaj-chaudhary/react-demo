@@ -3,9 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 import Tabs from './compound/Tabs';
 import { Tab } from './compound/Tab';
-import { TodoProvider } from './ContextHook/Context';
-import { AddTodo } from './ContextHook/AddToDo';
-import Todos from './ContextHook/ToDos';
+import { TodoProvider } from './ContextWithUseState/Context';
+import { AddTodo } from './ContextWithUseState/AddToDo';
+import Todos from './ContextWithUseState/ToDos';
 
 function App() {
   return (
