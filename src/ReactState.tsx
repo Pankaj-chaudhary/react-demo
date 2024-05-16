@@ -26,17 +26,19 @@ function App() {
     //   </header>
     // </div>
     <>
-    <Tabs>
-        <Tab label="Tab 1">
-          <p>Content for Tab 1</p>
-        </Tab>
-        <Tab label="Tab 2">
-          <p>Content for Tab 2</p>
-        </Tab>
-        <Tab label="Tab 3">
-          <p>Content for Tab 3</p>
-        </Tab>
-      </Tabs>
+    <main className='App'>
+      <Tabs>
+          <Tab label="Tab 1">
+            <p>Content for Tab 1</p>
+          </Tab>
+          <Tab label="Tab 2">
+            <p>Content for Tab 2</p>
+          </Tab>
+          <Tab label="Tab 3">
+            <p>Content for Tab 3</p>
+          </Tab>
+        </Tabs>
+      </main>
       <TodoProvider>
         <main className='App'>
           <h1>My Todos</h1>
@@ -48,4 +50,4 @@ function App() {
   );
 }
 
-export default App;
+export const ReactState = App;
