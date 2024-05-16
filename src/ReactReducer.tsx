@@ -3,9 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 import Tabs from './compound/Tabs';
 import { Tab } from './compound/Tab';
-import { TodoProvider } from './ContextWithUseState/Context';
-import { AddTodo } from './ContextWithUseState/AddToDo';
-import Todos from './ContextWithUseState/ToDos';
+import { TodoProvider } from './ContextWithReducer/Context';
+import { AddTodo } from './ContextWithReducer/AddToDo';
+import Todos from './ContextWithReducer/ToDos';
 
 function App() {
   return (
@@ -26,23 +26,10 @@ function App() {
     //   </header>
     // </div>
     <>
-    <main className='App'>
-      <Tabs>
-          <Tab label="Tab 1">
-            <p>Content for Tab 1</p>
-          </Tab>
-          <Tab label="Tab 2">
-            <p>Content for Tab 2</p>
-          </Tab>
-          <Tab label="Tab 3">
-            <p>Content for Tab 3</p>
-          </Tab>
-        </Tabs>
-      </main>
       <TodoProvider>
         <main className='App'>
-          <h1>My Todos (With useState)</h1>
-          <AddTodo />
+          <h1>My Todos (With Reducer)</h1>
+          <AddTodo/>
           <Todos />
         </main>
       </TodoProvider>
@@ -50,4 +37,4 @@ function App() {
   );
 }
 
-export const ReactState = App;
+export const ReactReducer = App;

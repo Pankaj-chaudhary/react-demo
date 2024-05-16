@@ -4,6 +4,7 @@ import './index.css';
 import './styles.css';
 import {ReactState} from './ReactState';
 import reportWebVitals from './reportWebVitals';
+import { ReactReducer } from './ReactReducer';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -11,6 +12,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <ReactState />
+    <ReactReducer />
   </React.StrictMode>
 );
 
