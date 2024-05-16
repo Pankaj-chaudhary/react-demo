@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+/.vs/slnx.sqlite
+/.vs/react-demo/FileContentIndex/d5c9cafc-c4da-4414-a582-80f72c748190.vsidx
+/.vs/react-demo/FileContentIndex/5a419e09-6840-4c46-9b73-f649946d302a.vsidx
+*.vsidx
