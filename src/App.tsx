@@ -1,15 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Tabs from './compound/Tabs';
-import { Tab } from './compound/Tab';
-import { TodoProvider } from './ContextWithReducer/Context';
-import { AddTodo } from './ContextWithReducer/AddToDo';
-import Todos from './ContextWithReducer/ToDos';
 import { Link, Route, BrowserRouter as Router, Routes,  } from 'react-router-dom';
 import { ReactState } from './ContextWithUseState/ReactState';
 import { ReactReducer } from './ContextWithReducer/ReactReducer';
 import { Home } from './Home';
+import { ReduxState } from './StateWithRedux/ReduxState';
 
 export const App = () => {
     const linkStyle = {
@@ -23,12 +18,14 @@ export const App = () => {
           <nav>
             <Link style={linkStyle} to="/">Home</Link>
             <Link style={linkStyle} to="/context-state">React Context (State)</Link>
-            <Link style={linkStyle} to="/context-reducter">React Context (Reducer)</Link>
+            <Link style={linkStyle} to="/context-reducer">React Context (Reducer)</Link>
+            <Link style={linkStyle} to="/redux-state">Redux State</Link>
           </nav>
           <Routes>            
             <Route path="/" element={<Home/>} />
             <Route path="/context-state" element={<ReactState/>} />
-            <Route path="/context-reducter" element={<ReactReducer/>} />
+            <Route path="/context-reducer" element={<ReactReducer/>} />
+            <Route path="/redux-state" element={<ReduxState/>} />
           </Routes>
         </div>
       </Router>
