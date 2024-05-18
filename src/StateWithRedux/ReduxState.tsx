@@ -1,7 +1,5 @@
 import React from 'react';
 import '../App.css';
-import Tabs from '../compound/Tabs';
-import { Tab } from '../compound/Tab';
 import { AddTodo } from './AddToDo';
 import Todos from './ToDos';
 import { Provider } from 'react-redux';
@@ -26,22 +24,9 @@ function App() {
     //   </header>
     // </div>
     <>
-    <main className='App'>
-      <Tabs>
-          <Tab label="Tab 1">
-            <p>Content for Tab 1</p>
-          </Tab>
-          <Tab label="Tab 2">
-            <p>Content for Tab 2</p>
-          </Tab>
-          <Tab label="Tab 3">
-            <p>Content for Tab 3</p>
-          </Tab>
-        </Tabs>
-      </main>
       <Provider store={store}>
         <main className='App'>
-          <h1>My Todos (UseContext With useState)</h1>
+          <h1>My Todos (Redux With toolkit)</h1>
           <AddTodo />
           <Todos />
         </main>
