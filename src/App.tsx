@@ -5,6 +5,7 @@ import { ReactState } from './ContextWithUseState/ReactState';
 import { ReactReducer } from './ContextWithReducer/ReactReducer';
 import { Home } from './Home';
 import { ReduxState } from './StateWithReduxToolkit/ReduxStateWithToolkit';
+import { Compound } from './compound/Compound';
 
 export const App = () => {
     const linkStyle = {
@@ -17,12 +18,14 @@ export const App = () => {
         <div>
           <nav>
             <Link style={linkStyle} to="/">Home</Link>
+            <Link style={linkStyle} to="/compound-component">React Compound Component</Link>
             <Link style={linkStyle} to="/context-state">React Context (State)</Link>
             <Link style={linkStyle} to="/context-reducer">React Context (Reducer)</Link>
             <Link style={linkStyle} to="/redux-toolkit">Redux State (With Toolkit)</Link>
           </nav>
           <Routes>            
             <Route path="/" element={<Home/>} />
+            <Route path="/compound-component" element={<Compound/>} />
             <Route path="/context-state" element={<ReactState/>} />
             <Route path="/context-reducer" element={<ReactReducer/>} />
             <Route path="/redux-toolkit" element={<ReduxState/>} />
