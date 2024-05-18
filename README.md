@@ -2,7 +2,8 @@
 - Compound components.
 - useContext with useState.
 - useContext with useReducer.
-
+- Redux example to save the state
+- React routing handling the navigation
 
 ## Available Scripts
 
