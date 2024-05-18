@@ -1,11 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
-import Tabs from './compound/Tabs';
-import { Tab } from './compound/Tab';
-import { TodoProvider } from './ContextWithReducer/Context';
-import { AddTodo } from './ContextWithReducer/AddToDo';
-import Todos from './ContextWithReducer/ToDos';
+import '../App.css';
+import { TodoProvider } from './Context';
+import { AddTodo } from './AddToDo';
+import Todos from './ToDos';
 
 function App() {
   return (
@@ -28,7 +26,7 @@ function App() {
     <>
       <TodoProvider>
         <main className='App'>
-          <h1>My Todos (With Reducer)</h1>
+          <h1>My Todos (Use Context With useReducer)</h1>
           <AddTodo/>
           <Todos />
         </main>

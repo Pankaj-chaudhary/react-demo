@@ -1,11 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Tabs from './compound/Tabs';
-import { Tab } from './compound/Tab';
-import { TodoProvider } from './ContextWithUseState/Context';
-import { AddTodo } from './ContextWithUseState/AddToDo';
-import Todos from './ContextWithUseState/ToDos';
+import '../App.css';
+import Tabs from '../compound/Tabs';
+import { Tab } from '../compound/Tab';
+import { TodoProvider } from './Context';
+import { AddTodo } from './AddToDo';
+import Todos from './ToDos';
 
 function App() {
   return (
@@ -41,7 +40,7 @@ function App() {
       </main>
       <TodoProvider>
         <main className='App'>
-          <h1>My Todos (With useState)</h1>
+          <h1>My Todos (UseContext With useState)</h1>
           <AddTodo />
           <Todos />
         </main>
