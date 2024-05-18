@@ -4,7 +4,7 @@ import { Link, Route, BrowserRouter as Router, Routes,  } from 'react-router-dom
 import { ReactState } from './ContextWithUseState/ReactState';
 import { ReactReducer } from './ContextWithReducer/ReactReducer';
 import { Home } from './Home';
-import { ReduxState } from './StateWithRedux/ReduxState';
+import { ReduxState } from './StateWithReduxToolkit/ReduxStateWithToolkit';
 
 export const App = () => {
     const linkStyle = {
