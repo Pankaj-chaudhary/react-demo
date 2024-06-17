@@ -1,0 +1,40 @@
+.report-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 0;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .report-icon {
+    font-size: 24px;
+    margin-right: 20px;
+    color: #6c757d; /* Set icon color to gray */
+  }
+  
+  .report-details {
+    flex: 1;
+  }
+  
+  .report-card h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .report-card .new {
+    background-color: #007bff;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+  }
+  
+  .report-card .last-visited {
+    color: #888;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  
