@@ -29,7 +29,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ images }) => {
           setTimeout(() => {
               img.src = img.dataset.src;
               observer.unobserve(img);
-          }, 2000); // Timeout set to 2 seconds (2000 milliseconds)
+          }, 1000); // Timeout set to 2 seconds (2000 milliseconds)
         }
     });
 }, []);
